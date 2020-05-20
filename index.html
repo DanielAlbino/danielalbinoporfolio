@@ -279,7 +279,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-5 my-4">
-                    <textarea class="form-control" placeholder="Message"></textarea>
+                    <textarea id="message" class="form-control" placeholder="Message"></textarea>
                 </div>
              </div>
              <div class="row pr-5 mr-5">
@@ -325,11 +325,12 @@
                 var name = document.getElementById("name").value;
                 var subject = document.getElementById("subject").value;
                 var message = document.getElementById("message").value;
+                console.log(email, name, subject, message);
                 Email.send({
                 SecureToken : "ea242458-d307-4dca-bdf7-4c8f49c04459",
                 To : 'daniel18albino@gmail.com',
                 From : email,
-                Subject : name + subject,
+                Subject : name +" "+ subject,
                 Body : message
             }).then(
             message => alert(message)
