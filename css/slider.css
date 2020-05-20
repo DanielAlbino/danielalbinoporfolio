@@ -26,11 +26,11 @@
 
 
 .slide1{
-    background-image: url("/images/mt4.jpg");
+    background-image: url("../images/mt4.jpg");
 }
 .slide2{
-    background-image: url("/images/mobile.jpg");
+    background-image: url("../images/mobile.jpg");
 }
 .slide3{
-    background-image: url("/images/web.jpg");
+    background-image: url("../images/web.jpg");
 }
