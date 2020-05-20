@@ -1,0 +1,12 @@
+#contact input {
+    background-color: #e6f2ff;
+    border: none;
+    border-bottom: solid #1a8cff 1px;
+}
+#contact textarea{
+    background-color: #e6f2ff;
+    border: none;
+    border-bottom: solid #1a8cff 1px;
+    height: 200px; 
+    resize: none;
+}
