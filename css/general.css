@@ -1,40 +1,183 @@
 html {
-    scroll-behavior: smooth;
-  }
-
-.navbar{
-    background-color:rgb(51, 48, 48);
+  scroll-behavior: smooth;
 }
-.navbar .navbar-brand {
-    font-weight: 500;
-}
-
-.navbar-nav .nav-item .nav-link {
-    font-weight: bold;
-    text-transform:uppercase;
-    color: white !important;
-}
-h1 {
-    font-size: 50px;
-    color: white;
-}
-
-h2 {
-    font-size: 40px !important;
-    color: #094266;
-    text-transform: uppercase;
-}
-
-p {
-    color: white;
-}
-
-img {
-    width: 40px;
-    height: 40px;
+.navbar {
+  color: transparent;
 }
 
 .btn {
-    width: 200px;
-    height: 40px;
+  border: 2px #6475f7 solid;
+  border-radius: 20px;
+  color: #6475f7;
+}
+
+.btn:hover {
+  background-color: #6475f7;
+  color: white;
+}
+
+#banner {
+  height: 500px;
+}
+
+.programmer-img {
+  background: url("../assets/programmer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 50px;
+  width: 50%;
+  height: 50%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.carousel-item {
+  height: 300px;
+}
+.carousel-indicators {
+  width: 100px;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #9ca7ff;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators .active {
+  background-color: #5165fb;
+}
+.carousel-item {
+  height: 350px;
+}
+
+.bg-color {
+  background-color: #5165fb;
+  height: 600px;
+}
+
+.title {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+#skills p {
+  color: black;
+}
+
+.clr-purple {
+  color: #5165fb !important;
+}
+
+.card,
+.card img {
+  border-radius: 15px !important;
+  box-shadow: grey 5px 5px 10px;
+}
+
+.card:hover {
+  cursor: pointer;
+  animation: floating 1.3s infinite;
+}
+
+#contact h2 {
+  color: white;
+}
+
+input {
+  margin: 5px 0px;
+  width: 400px;
+  height: 40px;
+  border: transparent;
+  padding-left: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca7ff;
+}
+
+textarea {
+  resize: none;
+  width: 400px;
+  height: 200px;
+  padding-left: 10px;
+}
+
+#send-btn {
+  width: 400px;
+  border-radius: 20px;
+  color: white;
+  background-color: #9ca7ff;
+}
+
+#send-btn:hover {
+  background-color: #8492fc;
+}
+
+#contact {
+  height: 650px;
+}
+
+#footer {
+  background-color: #8492fc;
+  color: white;
+}
+#footer a {
+  color: white;
+}
+
+.modal-body p {
+  color: black !important;
+}
+
+@keyframes floating {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-color {
+    background-color: #5165fb;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .v-line {
+    border-left: solid #5165fb 1px;
+    border-right: solid #5165fb 1px;
+  }
+  .programmer-img {
+    height: 400px;
+  }
+  .carousel-item {
+    height: 250px;
+  }
+  .bg-color {
+    background-color: #5165fb;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
 }

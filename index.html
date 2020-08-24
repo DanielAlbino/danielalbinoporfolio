@@ -1,346 +1,621 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/about.css">
-        <link rel="stylesheet" href="css/slider.css">
-        <link rel="stylesheet" href="css/contact.css">
-        <link rel="stylesheet" href="css/work.css">
-        <link rel="stylesheet" href="css/skills.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <script src="https://kit.fontawesome.com/feb87d5c3b.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <title>Daniel Albino - Porfolio</title>
-    </head>
-    <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark px-5">
-            <a class="navbar-brand mx-md-5 px-4" href="#">Daniel Albino</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse pr-2" id="navbarText">
-              <ul class="navbar-nav ml-auto  mr-md-5">
-                <li class="nav-item mx-md-2">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#work">Work</a>
-                </li>
-                <li class="nav-item mx-md-2">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-         <!-- Slider -->
-         <div id="slider" class="carousel slide" data-ride="carousel">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/feb87d5c3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./assets/logo.ico" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <title>Daniel Albino - Developing with the heart</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#"
+        ><img src="./assets/logo.png" alt=""
+      /></a>
+      <a href="#contact" class="btn my-2 my-sm-0" type="submit">
+        Contact me
+      </a>
+    </nav>
+    <!-- Navbar -->
+    <!-- Banner -->
+    <div class="container">
+      <div id="banner" class="row">
+        <div class="col-6">
+          <div id="carousel-banner" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#slider" data-slide-to="0" class="active"></li>
-              <li data-target="#slider" data-slide-to="1"></li>
-              <li data-target="#slider" data-slide-to="2"></li>
+              <li
+                data-target="#carousel-banner"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carousel-banner" data-slide-to="1"></li>
+              <li data-target="#carousel-banner" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner my-5 pt-5 ml--lg-5 pl-lg-5">
               <div class="carousel-item active">
-                <div class="slide1">
-                    <div class="pt-5 container">
-                        <div class="row">
-                            <div class="col-12 mt-5">
-                                <h1 class="mb-0">Meta Trader 4</h1>
-                                <p class="mt-0">Programming robots for the forex market</p>
-                            </div>
-                        </div>
-                        <div class="row ml-1 my-4">
-                            <ul class="pl-0">
-                                <li class="my-1">Expert Advisors</li>
-                                <li class="my-1">Indicators</li>
-                            </ul>
-                        </div>
-                        <div class="row mt-1">
-                            <div class="col-12">
-                                <p>Programming Language</p>
-                            </div>
-                            <div class="col-12">
-                                <img src="./images/language_c.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                <h1 class="my-4">FullStack Developer</h1>
+                <div class="col-12 row mt-5">
+                  Developed multiple websites using the latest<br />
+                  technologies like Vue.js, Node.js, etc.
                 </div>
               </div>
-            <div class="carousel-item">
-                <div class="slide2">
-                    <div class="pt-5 container">
-                        <div class="row">
-                            <div class="col-12 mt-5 mb-3">
-                                <h1 class="mb-0">Mobile Apps</h1>
-                                <p class="mt-0">Multi-Platform Applications</p>
-                            </div>
-                        </div>
-                        <div class="row ml-1 my-5">
-                            <ul class="pl-0">
-                                <li class="my-1">iOS & Android</li>
-                            </ul>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <p>Programming Language</p>
-                            </div>
-                            <div class="col-12">
-                                <i class="fab fa-react fa-3x" style="color:aqua;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
               <div class="carousel-item">
-                <div class="slide3">
-                    <div class="pt-5 container">
-                        <div class="row">
-                            <div class="col-12 mt-5 mb-3">
-                                <h1 class="mb-0">Web Apps</h1>
-                                <p class="mt-0">Pages for all tastes</p>
-                            </div>
-                        </div>
-                        <div class="row ml-1 my-4">
-                            <ul class="pl-0">
-                                <li class="my-1">Responsive pages</li>
-                                <li class="my-2">Clean code</li>
-                            </ul>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <p>Programming Language</p>
-                            </div>
-                            <div class="col-12 row ml-0">
-                                <i class="fab fa-3x fa-html5 mx-2" style="color: orange;"></i>
-                                <i class="fab fa-3x fa-css3-alt mx-2" style="color: blue;"></i>
-                                <i class="fab fa-3x fa-js mx-2" style="color: yellow;"></i>
-                            </div>
-                        </div>
-                    </div>
+                <h1 class="my-4">Mobile Developer</h1>
+                <div class="col-12 row mt-5">
+                  Developing an Android & iOS application <br />
+                  using React-native and Expo.
+                </div>
+              </div>
+              <div class="carousel-item">
+                <h1 class="my-4">Game Developer</h1>
+                <div class="col-12 row mt-5">
+                  Recently started to learn about game development <br />
+                  Learning c#, unity and phaser.js
                 </div>
               </div>
             </div>
           </div>
-         <!-- / Slider -->
-         <!-- About -->
-         <div id="about" class="container mb-5">
-            <div class="row my-5">
-                <div class="col-12 d-flex justify-content-center ">
-                    <h2>About</h2>
-                </div>
+        </div>
+        <div class="col-6 programmer-img mt-5 mt-lg-0"></div>
+      </div>
+    </div>
+    <!-- Banner -->
+    <!-- About -->
+    <div id="about" class="bg-color">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <h1 class="my-5 pt-5 title">Hi! I'm Daniel</h1>
+        </div>
+        <div class="col-12 px-5">
+          <p class="d-flex justify-content-center text-center">
+            My path started in 2010 with a certification in Software Development
+            with a Internship as a Web Developer. <br />
+            In 2013 I start a new certification as a Network Specialist. Worked
+            as a telecomunication tecnhician for 1 year and 4 months, and 8
+            months as a IT Tecnhician.<br />
+            But what I really wanted was to be a Developer, so I started to look
+            for opportunities in the area, and they appear. <br />In 2018 It
+            started as a FullStack developer at Polygon Innovations.Since than
+            I've been developing Web applications and websites.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <!-- Skills -->
+    <div class="container my-5">
+      <div id="skills" class="row">
+        <div class="col-12 col-lg-4">
+          <div class="col-12 d-flex justify-content-center">
+            <img src="./assets/monitor.png" alt="" />
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <h2>Front-end Developer</h2>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center mt-5">
+              <p class="clr-purple">Languages I speak:</p>
             </div>
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <p>
-                        When I was 16 years old I had a dream! <br>
-                        A dream of developing a game one day, but wait! <br>
-                        How do I knew how to develop a game? I didn't knew.
-                    </p>
-                    <p>
-                        So I started to search for a course where I knew I  would learn the right information to develop games.<br><br>
-                        My journey started in 2007 when I went to secondary school Dom Manuel Martins, where I took the course of  System Management and Programming  Technician level 4.<br><br>
-                        In 2014 I took a new course on Atec , Network and Systems Management Technician level 5.
-                    </p>
-                </div>
-                <div class="d-none d-lg-block col-lg-6">
-                    <img src="./images/IMG_0124-min.JPG" alt="">
-                </div>
+            <div class="col-12 d-flex justify-content-center">
+              <p>HTML5 | CSS3 | Javascript</p>
             </div>
-         </div>
-         <!-- /About -->
-         <!-- Work -->
-         <div id="work" class="container my-5 ">
-             <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <h2>Work</h2>
-                </div>
-             </div>
-             <div class="row my-5 ">
-                <div class="col-12 col-lg-4">
-                    <div class="card my-4 my-lg-0" >
-                        <img class="card-img-top" src="./images/polygon@2x.png" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Full-Stack Developer</h5>
-                          <h6>dez 2018 - current</h6>
-                          <p class="card-text">
-                            Analysis, design, and implementation of Web Applications 
-                            using HTML5, CSS3 and Javascript Frameworks such as Node.js, 
-                            Vue.js, Adonis.js. Git was used for version control 
-                            and MongoDB for database creation and management.
-                          </p>
-                          <a href="https://www.polygon.pt" class="btn btn-primary" target="_blank">polygon.pt</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card my-4 my-lg-0" >
-                        <img class="card-img-top" src="./images/troia.png" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Telecom. Op. Technician</h5>
-                          <h6>jul 2017 - nov 2018</h6>
-                          <p class="card-text">
-                            Maintenance and troubleshooting related to tv and internet. Internet activation through proprietary software.
-                          </p>
-                          <a href="https://www.pestana.com/pt/hotel/pestana-troia" class="btn btn-primary" target="_blank">pestana.com</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card my-4 my-lg-0" >
-                        <img class="card-img-top" src="./images/bysat.png" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">IT Technician</h5>
-                          <h6>jun 2016 - feb 2017</h6>
-                          <p class="card-text">
-                              Software installation, like antivirus, offices, windows and maintenance of those softwares.
-                              User management using the active directory.
-                          </p>
-                          <a href="http://bysat.pt/" class="btn btn-primary" target="_blank">bysat.pt</a>
-                        </div>
-                      </div>
-                </div>
-             </div>
-             <div class="row my-5 ">
-                <div class="col-12 col-lg-4">
-                    <div class="card my-4 my-lg-0">
-                        <img class="card-img-top" src="./images/reditus.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Junior Telecom. Technician</h5>
-                          <h6>oct 2015 - jun 2016</h6>
-                          <p class="card-text">
-                              Huawei and Alcatel switches installations. Maintenance of technical rooms.
-                              Resolve switching problems.
-                          </p>
-                          <a href="https://www.reditus.pt/" class="btn btn-primary" target="_blank">reditus.pt</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card my-4 my-lg-0">
-                        <img class="card-img-top" src="./images/install_plus.png" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Support Technician Intern</h5>
-                          <h6>aug 2014 - oct 2014</h6>
-                          <p class="card-text">
-                              Resolving ticket issues problems related with telephones, emails, routing and switching.
-                          </p>
-                          <a href="https://instalplus.pt/" class="btn btn-primary">installplus.pt</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card my-4 my-lg-0">
-                        <img class="card-img-top" src="./images/appacdm.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Web Developer  Intern</h5>
-                          <h6>Mar 2010 - May 2010</h6>
-                          <p class="card-text">
-                            Design and implementation of the company website using HTML, CSS Javascript and joomla. Created some Flyers with Photoshop.
-                          </p>
-                          <a href="http://www.appacdmsetubal.pt/" class="btn btn-primary">appacdm.pt</a>
-                        </div>
-                      </div>
-                </div>
-             </div>
-         </div>
-         <!-- /Work -->
-         <!-- Skills -->
-         <div id="skills" class="container">
-            <div class="row my-5 mx-0">
-                <div class="col-12 bg-color d-flex justify-content-center  align-items-center">
-                    <i class="fab fa-3x fa-html5 mx-4" style="color: white;"></i>
-                    <i class="fab fa-3x fa-css3-alt mx-4" style="color: white;"></i>
-                    <i class="fab fa-3x fa-js mx-4" style="color: white;"></i>
-                    <i class="fab fa-3x fa-react mx-4" style="color: white;"></i>
-                    <i class="fab fa-3x fa-github mx-4"  style="color: white;"></i>
-                    <i class="fab fa-3x fa-vuejs mx-4" style="color: white;"></i>
-                    <i class="fab fa-3x fa-node-js mx-4" style="color: white;"></i>
-                </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center mt-5">
+              <p class="clr-purple">Dev Tools:</p>
             </div>
-         </div>
-         <!-- /Skills -->
-         <!-- Contact -->
-         <div id="contact" class="container mb-5">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <h2>Let's talk</h2>
-                </div>
-             </div>
-             <div class="row">
-                <div class="col-12 col-lg-5 ml-lg-5">
-                    <div class="col-12 col-lg-10 my-4">
-                        <input id="name" type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="col-12 col-lg-10  my-4">
-                        <input id="email" type="text" class="form-control" placeholder="email@example.com">
-                    </div>
-                    <div class="col-12 col-lg-10 my-4">
-                        <input id="subject"  type="text" class="form-control" placeholder="subject">
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5 my-4">
-                    <textarea id="message" class="form-control" placeholder="Message"></textarea>
-                </div>
-             </div>
-             <div class="row pr-5 mr-5">
-                 <div class="col-12  d-flex justify-content-end mr-5 pr-5">
-                    <button class="btn btn-primary" onclick="sendMail()">Send</button>
-                 </div>
-             </div>
-         </div>
-         <!-- /Contact -->
-         <!-- Footer -->
-        <footer>
-            <div class="container ">
-                <div class="row ">
-                    <div class="col-12 col-lg-6 d-flex justify-content-start px-0 my-4 row">
-                        <div class="col-12 d-flex justify-content-center">
-                            <h5>Follow me</h5>
-                        </div>
-                        <div class="col-12  d-flex justify-content-center">
-                           <a href="https://www.linkedin.com/in/daniel-albino-65036492/" target="_blank"><i class="fab fa-linkedin-in mx-2"></i></a> 
-                           <a href="https://www.facebook.com/daniel.albino.773" target="_blank"><i class="fab fa-facebook-f mx-2"></i></a>
-                           <a href="https://www.instagram.com/daniel.f.p.albino" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6 d-flex justify-content-start px-0 my-4 row">
-                        <div class="col-12 d-flex justify-content-center">
-                            <h5>Resources</h5>
-                        </div>
-                        <div class="col-12  d-flex justify-content-center">
-                            <a href="https://www.instagram.com/daniel.f.p.albino" target="_blank"> <i class="fab fa-github mx-4"></i></a>
-                        </div>
-                    </div>
-                   
-                </div>
+            <div class="col-12 d-flex justify-content-center">
+              <p>Bitbucket | BootStrap | GitHub</p>
             </div>
-        </footer>
-        <!-- Footer -->
-        <!-- SMTP Script -->
-        <script src="https://smtpjs.com/v3/smtp.js">
-        </script>
-        <script>
-            function sendMail(){
-                var email = document.getElementById("email").value;
-                var name = document.getElementById("name").value;
-                var subject = document.getElementById("subject").value;
-                var message = document.getElementById("message").value;
-                console.log(email, name, subject, message);
-                Email.send({
-                SecureToken : "ea242458-d307-4dca-bdf7-4c8f49c04459",
-                To : 'daniel18albino@gmail.com',
-                From : email,
-                Subject : name +" "+ subject,
-                Body : message
-            }).then(
-            message => alert(message)
-            );
-            }
-            
-        </script>
-        <!-- Bootstrap Scripts -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    </body>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center mt-5">
+              <p class="clr-purple">Frameworks:</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <p>Vue.js | React.js</p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center mt-5">
+              <p class="clr-purple">Backend:</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <p>Node.js</p>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-12 d-flex justify-content-center mt-5">
+                <p class="clr-purple">Databases:</p>
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <p>MongoDB | FireBase</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 v-line">
+          <div class="col-12 d-flex justify-content-center">
+            <img src="./assets/mobile.png" alt="" />
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <h2>Mobile Developer</h2>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center mt-5">
+              <p class="clr-purple">Languages I speak:</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <p>React-Native</p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center mt-5">
+              <p class="clr-purple">Dev Tools:</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <p>Bitbucket | GitHub</p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center mt-5">
+              <p class="clr-purple">Databases:</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <p>FireBase</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="col-12 d-flex justify-content-center">
+            <img src="./assets/console.png" alt="" />
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <h2>Game Developer</h2>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center mt-5">
+              <p class="clr-purple">Languages I speak:</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <p>C# | Phaser.js</p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center mt-5">
+              <p class="clr-purple">Dev Tools:</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <p>Unity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Skills -->
+    <!-- Work -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <h2 class="my-4">My recent work</h2>
+        </div>
+        <div class="col-12 row mt-3">
+          <div
+            class="col-12 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center"
+          >
+            <div
+              class="card"
+              style="width: 18rem;"
+              data-toggle="modal"
+              data-target="#polygon"
+            >
+              <img
+                src="./assets/polygon.png"
+                class="card-img-top"
+                alt="polygon_innovations"
+              />
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center"
+          >
+            <div
+              class="card"
+              style="width: 18rem;"
+              data-toggle="modal"
+              data-target="#risk_calculator"
+            >
+              <img
+                src="./assets/trading_calculator.png"
+                class="card-img-top"
+                alt=".risk_calculator"
+              />
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center"
+          >
+            <div
+              class="card"
+              style="width: 18rem;"
+              data-toggle="modal"
+              data-target="#unity"
+            >
+              <img src="./assets/unity.png" class="card-img-top" alt="unity" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 row mt-5">
+          <div
+            class="col-12 col-lg-4 mt-1 mt-lg-0 d-flex justify-content-center"
+          >
+            <div
+              class="card"
+              style="width: 18rem;"
+              data-toggle="modal"
+              data-target="#metatrader"
+            >
+              <img
+                src="./assets/mql.png"
+                class="card-img-top"
+                alt="metatrader4"
+              />
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center"
+          >
+            <div
+              class="card"
+              style="width: 18rem;"
+              data-toggle="modal"
+              data-target="#phaser"
+            >
+              <img
+                src="./assets/phaser.png"
+                class="card-img-top"
+                alt="phaserJS"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Work -->
+    <!-- Contact -->
+    <div id="contact" class="row bg-color">
+      <div class="col-12 d-flex justify-content-center mt-5">
+        <h2>Get in touch</h2>
+      </div>
+      <div class="col-12 row mb-5">
+        <div class="col-12 d-flex justify-content-center">
+          <input type="text" placeholder="Name" id="name" />
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <input type="text" placeholder="Email" id="email" />
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <input type="text" placeholder="Subject" id="subject" />
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <textarea
+            name="textarea"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <button
+            id="send-btn"
+            class="btn my-2 my-sm-0 ml-auto mr-auto"
+            type="submit"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <!-- Footer -->
+    <div id="footer" class="col-12">
+      <div class="row">
+        <div class="col-6">
+          Follow me on:
+          <a href="https://github.com/DanielAlbino" target="blank">
+            <i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/daniel-albino-65036492/"
+            target="blank"
+            ><i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="col-6">Daniel Albino &copy; 2020</div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <!-- Modal -->
+    <!-- Phaser -->
+    <div
+      class="modal fade"
+      id="phaser"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="phaser"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="phaser">
+              Game Development with Phaser
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-12">
+            <div class="col-6">
+              <img src="./assets/phaser.png" alt="phaser" />
+            </div>
+            <div class="col-12">
+              <br />
+              <p>
+                Phaser.js a great way to develop games using javascript. <br />
+                I started to learn recently and it is amazing. I already create
+                a platform game and a click to kill game. they are both very
+                basic, but helped me to know the basics of phaser.js.
+              </p>
+              <a
+                href="https://github.com/DanielAlbino/bunny-jump-phaser"
+                target="blank"
+                >Bunny Jump (Platform game)</a
+              >
+              <br />
+              <a
+                href="https://github.com/DanielAlbino/space-game"
+                target="blank"
+                >Space Destroy (click and kill game)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Phaser -->
+    <!-- Polygon -->
+    <div
+      class="modal fade"
+      id="polygon"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="polygon"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="polygon">
+              Polygon - Know your customers
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-12">
+            <div class="col-12">
+              <img src="./assets/polygon.png" alt="polygon" />
+            </div>
+            <div class="col-12">
+              <br />
+              <p>
+                Digital KYC with multimodal Liveness Detection. Replace
+                passwords for higher security and easier to use solutions.
+              </p>
+              <p class="clr-purple">
+                <b>Developed with: &nbsp;</b>HTML, CSS, javascript, Bootstrap
+              </p>
+              <a href="https://polygon.pt/" target="blank"
+                >Polygon - Know your costumers</a
+              >
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Polygon -->
+    <!-- Mql -->
+    <div
+      class="modal fade"
+      id="metatrader"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="metatrader"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="metatrader">
+              MetaTrader - Robots and Indicators
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-12">
+            <div class="col-12">
+              <img src="./assets/mql.png" alt="mql" />
+            </div>
+            <div class="col-12">
+              <br />
+              <p>
+                Forex Market moves arroud 5 trillion dolars per day. Those
+                Robots and indicatiors help the traders to get the best
+                opportunity in the market. Robots - they can open and close a
+                trade, they are autonomous. Indicators - help the trader by
+                warning when the best opportunty occours.
+              </p>
+              <p class="clr-purple"><b>Developed with: &nbsp;</b> C</p>
+              <a
+                href="https://www.mql5.com/pt/market/product/47744"
+                target="blank"
+                >RSI Crossover - Indicator</a
+              >
+              <br />
+              <a
+                href="https://www.mql5.com/pt/market/product/47781"
+                target="blank"
+                >Trend Indicator</a
+              >
+              <br />
+              <a
+                href="https://www.mql5.com/pt/market/product/47316"
+                target="blank"
+                >TakeProfit - Robot</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mql -->
+    <!-- risk calculator -->
+    <div
+      class="modal fade"
+      id="risk_calculator"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="risk_calculator"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="risk_calculator">
+              Forex Risk Calculator
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-12">
+            <div class="col-12">
+              <img src="./assets/trading_calculator.png" alt="mql" />
+            </div>
+            <div class="col-12">
+              <br />
+              <p>
+                This app helps the trader to manage their position. It will
+                calculate the lot/unit for the position based on his capital,
+                risk percentage and StopLoss. This application helps the trader
+                to have a better money management. (currently in development)
+              </p>
+              <p class="clr-purple">
+                <b>Developed with: &nbsp;</b> React Native, Expo, Firebase
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- risk calculator -->
+    <!-- unity -->
+    <div
+      class="modal fade"
+      id="unity"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="unity"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="unity">
+              Game Development with Unity and C#
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-12">
+            <div class="col-12">
+              <img src="./assets/unity.png" alt="unity" />
+            </div>
+            <div class="col-12">
+              <br />
+              <p>
+                The world of gaming as grow through the years. Unity is one of
+                the most famous platforms for game development. I started to
+                learn unity and C# it is the new path I want to walk as a
+                developer. I've been doing some udemy courses and developed some
+                basic games.
+              </p>
+              <p class="clr-purple"><b>Developed with: &nbsp;</b> C#</p>
+              <a
+                href="https://github.com/DanielAlbino/unity_game_development/tree/master/Flying%20Bird"
+                >Flying Bird (angry bird alike game)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- unity -->
+    <!-- Modal -->
+    <!-- Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script -->
+  </body>
 </html>
