@@ -5,6 +5,8 @@
       src="https://kit.fontawesome.com/feb87d5c3b.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/email.js"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -297,13 +299,13 @@
       </div>
       <div class="col-12 row mb-5">
         <div class="col-12 d-flex justify-content-center">
-          <input type="text" placeholder="Name" id="name" />
+          <input type="text" placeholder="Name*" id="name" />
         </div>
         <div class="col-12 d-flex justify-content-center">
-          <input type="text" placeholder="Email" id="email" />
+          <input type="text" placeholder="Email*" id="email" />
         </div>
         <div class="col-12 d-flex justify-content-center">
-          <input type="text" placeholder="Subject" id="subject" />
+          <input type="text" placeholder="Subject*" id="subject" />
         </div>
         <div class="col-12 d-flex justify-content-center">
           <textarea
@@ -311,7 +313,7 @@
             id="message"
             cols="30"
             rows="10"
-            placeholder="Message"
+            placeholder="Message*"
           ></textarea>
         </div>
         <div class="col-12 d-flex justify-content-center">
@@ -319,6 +321,7 @@
             id="send-btn"
             class="btn my-2 my-sm-0 ml-auto mr-auto"
             type="submit"
+            onclick="sendMail()"
           >
             Send
           </button>
