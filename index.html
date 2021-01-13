@@ -1,732 +1,134 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <script
-      src="https://kit.fontawesome.com/feb87d5c3b.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./js/email.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./assets/logo.ico" />
-    <link rel="stylesheet" href="./css/general.css" />
-    <title>Daniel Albino - Developing with the heart</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-light">
-      <a class="navbar-brand" href="#"
-        ><img src="./assets/logo.png" alt=""
-      /></a>
-      <a href="#contact" class="btn my-2 my-sm-0" type="submit"> Contact me </a>
-    </nav>
-    <!-- Navbar -->
-    <!-- Banner -->
-    <div class="container">
-      <div id="banner" class="row">
-        <div class="col-6">
-          <div id="carousel-banner" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carousel-banner"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#carousel-banner" data-slide-to="1"></li>
-              <li data-target="#carousel-banner" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner my-5 pt-5 ml--lg-5 pl-lg-5">
-              <div class="carousel-item active">
-                <h1 class="my-4">FullStack Developer</h1>
-                <div class="col-12 row mt-5">
-                  Developed multiple websites using the latest<br />
-                  technologies like Vue.js, Node.js, etc.
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>ALBINO DEVELOPER</title>
+</head>
+<body>
+        <div class="background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-4">
+                        <h1 class="large">AL<br>BI<br>NO</h1>
+                    </div>
+                    <div class="col-6 col-lg-7  middle">
+                        <p>WEB DEVELOPER</p>
+                        <h1 class="medium my-2 my-md-2 my-lg-0">DEVELOPER</h1>
+                        <p class="right">GAME DEVELOPER</p>
+                        <div>
+                            <svg class="small-img">
+                                <rect
+                                style="display:inline;fill:none;stroke:#fffff2;stroke-width:4.74498;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000"
+                                id="outsideScroll"
+                                width="25"
+                                height="50"
+                                x="4.4145484"
+                                y="4.0761509"
+                                ry="10"
+                                inkscape:export-xdpi="94"
+                                inkscape:export-ydpi="94" />
+                             <rect
+                                style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.36041;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000"
+                                id="insideScroll"
+                                width="18"
+                                height="20"
+                                x="8"
+                                y="7"
+                                ry="10"
+                                inkscape:export-xdpi="94"
+                                inkscape:export-ydpi="94" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <h1 class="my-4">Mobile Developer</h1>
-                <div class="col-12 row mt-5">
-                  Developing an Android & iOS application <br />
-                  using React-native and Expo.
+            </div>
+        </div> 
+        <div class="bg-color-dark pt-5">
+            <div class="container py-5">
+                <div id="box" class="box d-flex align-items-center justify-content-center">
+                    <h1 class="dark">ABOUT</h1>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <h1 class="my-4">Game Developer</h1>
-                <div class="col-12 row mt-5">
-                  Recently started to learn about game development <br />
-                  Learning c#, unity and phaser.js
+                <div class="row">
+                    <div id="text" class="col-12 my-5 mx-3">
+                        Hi! I'm Daniel, nice to meet you.
+                        <br>
+                        <br>
+                        Gaming was a big part of my growing up. I was born in the 90's so I've saw many games appear, like Pokemon, Super Mario 64, The legend of zelda, and many more.
+                        That contact with games helped me with the path I wanted for my life. Become a Developer. <br>
+                        In 2007 I decided to go to High School and study computer science, where I learned developing in Pascal, Visual Basic, C#, HTML, CSS and JavaScrpi,
+                        but life wasn't good at the time, so when I finished the High School I worked in many jobs not related with IT. 
+                        In 2013 I've decided to go to the next level. <br>
+                        So I did an Vocational Course in networking and software management and after a year and a half studying I got a job as a Telecomunication technician.
+                        But wat I realy wanted was to develop things, so I started looking for jobs as a developer and in 2018 I've got the opportunity to work as a fullstack developer.
+                        Since then I've been working as a developer. 
+                        <br><br>
+                        I learn that we must never give up our dreams and fight for to achieve them.
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="col-6 programmer-img mt-5 mt-lg-0"></div>
-      </div>
-    </div>
-    <!-- Banner -->
-    <!-- About -->
-    <div id="about" class="bg-color">
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <h1 class="my-5 pt-5 title">Hi! I'm Daniel</h1>
+        <div class="bg-color-dark">
+            <div class="container">
+                <div id="project" class="row pb-5">
+                    <div id="projects" class="col-12 d-flex flex-row-reverse">
+                        <div class="box d-flex align-items-center justify-content-center" style="opacity: 1;">
+                            <h1 class="dark">PROJECTS</h1>
+                        </div>
+                    </div>
+                    <div id="finance" class="col-12 mt-5">
+                        <h2>Financial Market</h2>
+                            Since 2017 I've been developing some tools for the forex market. Those tools, developed in C, can help the trader to make decisions.
+                            <br>
+                            I've developed indicators based on traders feedback, like what kind of commun indicators they work with, and with that creating my own indicators.
+                            Those indicators helped the traders to have more than 70% of winning trades.
+
+                            It is possible to find some of them in the following links:<br><br>
+                            <a href="https://www.mql5.com/pt/market/product/47744?source=Site+Profile+Seller" target="_blank">RSI CrossOver Indicator</a> &nbsp;
+                            <a href="https://www.mql5.com/pt/market/product/47316?source=Site+Profile+Seller" target="_blank">TakeProfit Automatic Robot</a> &nbsp;
+                            <a href="https://www.mql5.com/pt/market/product/47781?source=Site+Profile+Seller" target="_blank">Trend Indicator</a> &nbsp;
+                    </div>
+                    <div id="web" class="col-12 mt-5">
+                        <h2>Web Developement</h2>
+                            My path as a web developer started in 2010 in my curricular intership, where I've developed a small webpage using HTML, CSS, Javascript and Joomla.
+                            This small webpage was the final project for the course. However in 2018 I've get an opportunity to work as Full Stack Developer where I take my skills to another level.
+                            In the Company I've worked with I had the opportunity to learn Javascript frameworks such as Vue.js and Node.js and some NoSql Databases like MongoDB.
+                            There I've developed the Company's website, primarely using HTML, CSS and Javascript, but after a while I implemented Strapi, a CMS, in the backend, in that way any person had the capabilaty to add information to the webpage.
+                            Besides of that project, I've developed a small webscrapper, that gathers a specific information from another place, with node.js calls, using axios module and than with Express I developed the paths to make calls from the frontend.
+                            The front end was developed in Vue.js.
+
+                            In my personal time, I've been learning about other things, like React.js, Python and others.
+                            <br><br>
+                            Here you can see the Polygon's Webpage: <a href="https://polygon.pt/" target="_blank">Polygon.pt</a>
+                            <br><br>
+                            You can find more projects in my github page: <a href="https://github.com/DanielAlbino?tab=repositories" target="_blank">GitHub</a>
+                    </div>
+                    <div id="gaming" class="col-12 mt-5">
+                        <h2>Game Developement</h2>
+                        In 2020, I have the idea to create some game to play, something that I would like to play for myself, but I didn't know how to play, so I started to learn about game developement.
+                        I started to search on the internet about what tools I must use and I found Unity and C#, using those tools I've been able to develop some Games. 
+                        Besides using Unity and C# I've started using Phaser.js for HTML game development. I've already developed some small games like angry birds alike game, Mr Pudding - Survival Mode, 4096 game, and others.
+                        <br><br>
+                        Bellow you can check the games or the game's source code:<br><br>
+                        <a href="https://albino-studio.itch.io/mr-pudding-survival-mode" target="_blank">Mr Pudding- Survival Mode</a> &nbsp;
+                        <a href="https://danielalbino.github.io/rpslp_html_game/" target="_blank">Rock Paper Scissors Lizard Spock</a> &nbsp;
+                        <a href="https://danielalbino.github.io/phaser_sum_tiles_puzzle_game/" target="_blank">Puzzle Game - 4096</a> &nbsp;
+                        <a href="https://danielalbino.github.io/bunny-jump-phaser/index.html" target="_blank">Bunny Jump</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-12 px-5">
-          <p class="d-flex justify-content-center text-center">
-            My path started in 2010 with a certification in Software Development
-            with a Internship as a Web Developer. <br />
-            In 2013 I start a new certification as a Network Specialist. Worked
-            as a telecomunication tecnhician for 1 year and 4 months, and 8
-            months as a IT Tecnhician.<br />
-            But what I really wanted was to be a Developer, so I started to look
-            for opportunities in the area, and they appear. <br />In 2018 It
-            started as a FullStack developer at Polygon Innovations. Since than
-            I've been developing Web applications and websites.
-          </p>
+        <div class="bg-color-dark">
+            <div class="container py-5">
+                <h2>Contact me</h2>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- About -->
-    <!-- Skills -->
-    <div class="container my-5">
-      <div id="skills" class="row">
-        <div class="col-12 col-lg-4">
-          <div class="col-12 d-flex justify-content-center">
-            <img src="./assets/monitor.png" alt="" />
-          </div>
-          <div class="col-12 d-flex justify-content-center">
-            <h2>Front-end Developer</h2>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 d-flex justify-content-center mt-5">
-              <p class="clr-purple">Languages I speak:</p>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-              <p>HTML5 | CSS3 | Javascript</p>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 d-flex justify-content-center mt-5">
-              <p class="clr-purple">Dev Tools:</p>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-              <p>Bitbucket | BootStrap | GitHub</p>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 d-flex justify-content-center mt-5">
-              <p class="clr-purple">Frameworks:</p>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-              <p>Vue.js | React.js</p>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 d-flex justify-content-center mt-5">
-              <p class="clr-purple">Backend:</p>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-              <p>Node.js</p>
-            </div>
-            <div class="row d-flex justify-content-center">
-              <div class="col-12 d-flex justify-content-center mt-5">
-                <p class="clr-purple">Databases:</p>
-              </div>
-              <div class="col-12 d-flex justify-content-center">
-                <p>MongoDB | FireBase</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4 v-line">
-          <div class="col-12 d-flex justify-content-center">
-            <img src="./assets/mobile.png" alt="" />
-          </div>
-          <div class="col-12 d-flex justify-content-center">
-            <h2>Mobile Developer</h2>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 d-flex justify-content-center mt-5">
-              <p class="clr-purple">Languages I speak:</p>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-              <p>React-Native</p>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 d-flex justify-content-center mt-5">
-              <p class="clr-purple">Dev Tools:</p>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-              <p>Bitbucket | GitHub</p>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 d-flex justify-content-center mt-5">
-              <p class="clr-purple">Databases:</p>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-              <p>FireBase</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4">
-          <div class="col-12 d-flex justify-content-center">
-            <img src="./assets/console.png" alt="" />
-          </div>
-          <div class="col-12 d-flex justify-content-center">
-            <h2>Game Developer</h2>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 d-flex justify-content-center mt-5">
-              <p class="clr-purple">Languages I speak:</p>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-              <p>C# | Phaser.js</p>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 d-flex justify-content-center mt-5">
-              <p class="clr-purple">Dev Tools:</p>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-              <p>Unity</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Skills -->
-    <!-- Work -->
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <h2 class="my-4">My work</h2>
-        </div>
-        <div class="col-12 row mt-3">
-          <div
-            class="col-12 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center"
-          >
-            <div
-              class="card"
-              style="width: 18rem"
-              data-toggle="modal"
-              data-target="#polygon"
-            >
-              <img
-                src="./assets/polygon.png"
-                class="card-img-top"
-                alt="polygon_innovations"
-              />
-            </div>
-          </div>
-          <div
-            class="col-12 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center"
-          >
-            <div
-              class="card"
-              style="width: 18rem"
-              data-toggle="modal"
-              data-target="#risk_calculator"
-            >
-              <img
-                src="./assets/trading_calculator.png"
-                class="card-img-top"
-                alt=".risk_calculator"
-              />
-            </div>
-          </div>
-          <div
-            class="col-12 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center"
-          >
-            <div
-              class="card"
-              style="width: 18rem"
-              data-toggle="modal"
-              data-target="#unity"
-            >
-              <img src="./assets/unity.png" class="card-img-top" alt="unity" />
-            </div>
-          </div>
-        </div>
-        <div class="col-12 row mt-5">
-          <div
-            class="col-12 col-lg-4 mt-1 mt-lg-0 d-flex justify-content-center"
-          >
-            <div
-              class="card"
-              style="width: 18rem"
-              data-toggle="modal"
-              data-target="#metatrader"
-            >
-              <img
-                src="./assets/mql.png"
-                class="card-img-top"
-                alt="metatrader4"
-              />
-            </div>
-          </div>
-          <div
-            class="col-12 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center"
-          >
-            <div
-              class="card"
-              style="width: 18rem"
-              data-toggle="modal"
-              data-target="#phaser"
-            >
-              <img
-                src="./assets/phaser.png"
-                class="card-img-top"
-                alt="phaserJS"
-              />
-            </div>
-          </div>
-          <div
-            class="col-12 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center"
-          >
-            <div
-              class="card"
-              style="width: 18rem"
-              data-toggle="modal"
-              data-target="#logos"
-            >
-              <img src="./assets/art.png" class="card-img-top" alt="art" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Work -->
-    <!-- Contact -->
-    <div id="contact" class="row bg-color">
-      <div class="col-12 d-flex justify-content-center mt-5">
-        <h2>Get in touch</h2>
-      </div>
-      <div class="col-12 row mb-5">
-        <div class="col-12 d-flex justify-content-center">
-          <input type="text" placeholder="Name*" id="name" />
-        </div>
-        <div class="col-12 d-flex justify-content-center">
-          <input type="text" placeholder="Email*" id="email" />
-        </div>
-        <div class="col-12 d-flex justify-content-center">
-          <input type="text" placeholder="Subject*" id="subject" />
-        </div>
-        <div class="col-12 d-flex justify-content-center">
-          <textarea
-            name="textarea"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Message*"
-          ></textarea>
-        </div>
-        <div class="col-12 d-flex justify-content-center">
-          <button
-            id="send-btn"
-            class="btn my-2 my-sm-0 ml-auto mr-auto"
-            type="submit"
-            onclick="sendMail()"
-          >
-            Send
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Contact -->
-    <!-- Footer -->
-    <div id="footer" class="col-12">
-      <div class="row">
-        <div class="col-6">
-          Follow me on:
-          <a href="https://github.com/DanielAlbino" target="blank">
-            <i class="fab fa-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/daniel-albino-65036492/"
-            target="blank"
-            ><i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-        <div class="col-6">Daniel Albino &copy; 2020</div>
-      </div>
-    </div>
-    <!-- Footer -->
-    <!-- Modal -->
-    <!-- Phaser -->
-    <div
-      class="modal fade"
-      id="phaser"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="phaser"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="phaser">
-              Game Development with Phaser
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body col-12">
-            <div class="col-6">
-              <img src="./assets/phaser.png" alt="phaser" />
-            </div>
-            <div class="col-12">
-              <br />
-              <p>
-                Phaser.js a great way to develop games using javascript. <br />
-                I started to learn recently and it is amazing. I already create
-                a platform game and a click to kill game. they are both very
-                basic, but helped me to know the basics of phaser.js.
-              </p>
-              <p class="clr-purple">
-                <b>Developed with: &nbsp;</b> Phser.js, HTML, CSS, React
-              </p>
-              <a
-                href="https://github.com/DanielAlbino/bunny-jump-phaser"
-                target="blank"
-                >Bunny Jump (Platform game)</a
-              >
-              <br />
-              <a
-                href="https://github.com/DanielAlbino/space-game"
-                target="blank"
-                >Space Destroy (click and kill game)</a
-              >
-              <br />
-              <a
-                href="https://github.com/DanielAlbino/phaser_sum_tiles_puzzle_game"
-                >4096 - clone</a
-              >
-              <br />
-              <a href="https://github.com/DanielAlbino/react-tetris-game"
-                >Tetris</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Phaser -->
-    <!-- Polygon -->
-    <div
-      class="modal fade"
-      id="polygon"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="polygon"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="polygon">
-              Polygon - Know your customers
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body col-12">
-            <div class="col-12">
-              <img src="./assets/polygon.png" alt="polygon" />
-            </div>
-            <div class="col-12">
-              <br />
-              <p>
-                Digital KYC with multimodal Liveness Detection. Replace
-                passwords for higher security and easier to use solutions.
-              </p>
-              <p class="clr-purple">
-                <b>Developed with: &nbsp;</b>HTML, CSS, javascript, Bootstrap
-              </p>
-              <a href="https://polygon.pt/" target="blank"
-                >Polygon - Know your costumers</a
-              >
-              <br />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Polygon -->
-    <!-- Mql -->
-    <div
-      class="modal fade"
-      id="metatrader"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="metatrader"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="metatrader">
-              MetaTrader - Robots and Indicators
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body col-12">
-            <div class="col-12">
-              <img src="./assets/mql.png" alt="mql" />
-            </div>
-            <div class="col-12">
-              <br />
-              <p>
-                Forex Market moves arroud 5 trillion dolars per day. Those
-                Robots and indicatiors help the traders to get the best
-                opportunity in the market. Robots - they can open and close a
-                trade, they are autonomous. Indicators - help the trader by
-                warning when the best opportunty occours.
-              </p>
-              <p class="clr-purple"><b>Developed with: &nbsp;</b> C</p>
-              <a
-                href="https://www.mql5.com/pt/market/product/47744"
-                target="blank"
-                >RSI Crossover - Indicator</a
-              >
-              <br />
-              <a
-                href="https://www.mql5.com/pt/market/product/47781"
-                target="blank"
-                >Trend Indicator</a
-              >
-              <br />
-              <a
-                href="https://www.mql5.com/pt/market/product/47316"
-                target="blank"
-                >TakeProfit - Robot</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Mql -->
-    <!-- risk calculator -->
-    <div
-      class="modal fade"
-      id="risk_calculator"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="risk_calculator"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="risk_calculator">
-              Forex Risk Calculator
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body col-12">
-            <div class="col-12">
-              <img src="./assets/trading_calculator.png" alt="mql" />
-            </div>
-            <div class="col-12">
-              <br />
-              <p>
-                This app helps the trader to manage their position. It will
-                calculate the lot/unit for the position based on his capital,
-                risk percentage and StopLoss. This application helps the trader
-                to have a better money management. (currently in development)
-              </p>
-              <p class="clr-purple">
-                <b>Developed with: &nbsp;</b> React Native, Expo, Firebase
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- risk calculator -->
-    <!-- unity -->
-    <div
-      class="modal fade"
-      id="unity"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="unity"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="unity">
-              Game Development with Unity and C#
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body col-12">
-            <div class="col-12">
-              <img src="./assets/unity.png" alt="unity" />
-            </div>
-            <div class="col-12">
-              <br />
-              <p>
-                The world of gaming as grow through the years. Unity is one of
-                the most famous platforms for game development. I started to
-                learn unity and C# it is the new path I want to walk as a
-                developer. I've been doing some udemy courses and developed some
-                basic games.
-              </p>
-              <p class="clr-purple"><b>Developed with: &nbsp;</b> C#</p>
-              <a
-                href="https://github.com/DanielAlbino/unity_angry_bird"
-                target="blank"
-                >Flying Bird (angry bird alike game)</a
-              >
-              <br />
-              <a
-                href="https://github.com/DanielAlbino/unity_bomb_escape"
-                target="blank"
-                >Bomb escape</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- unity -->
-    <!-- logos -->
-    <div
-      class="modal fade"
-      id="logos"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="logos"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="logos">Logos, Mockups & Pixel Art</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body col-12">
-            <div class="col-12">
-              <img src="./assets/art.png" alt="logos" />
-            </div>
-            <div class="col-12">
-              <br />
-              <p>
-                In my Free time I like to create some logos for contests in
-                freelance.com or designcrowd.com to earn an extra cash and to
-                get better with some designing software.
-              </p>
-              <p class="clr-purple">
-                <b>Created with: &nbsp;</b>Photoshop, Adobe Ilustrator, Gravit
-                Designer
-              </p>
-              <p>Logos</p>
-              <a
-                href="https://designers.designcrowd.com/designer/740885/danielalbino"
-                target="blank"
-                >DesignCrowd.com</a
-              >
-              <br />
-              <a href="https://www.freelancer.com/u/DanielAlbino" target="blank"
-                >Freelancer.com</a
-              >
-              <br /><br />
-              <p>Mockups</p>
-              <a
-                href="https://designer.gravit.io/?token=Qihb3-HB-kNIpzwcIjh4cfBFJ-Ag9P17"
-                target="blank"
-                >TraderTrack</a
-              >
-              <br />
-              <a
-                href="https://designer.gravit.io/?token=hTazZTlWQBtmdOVXwcRDpHxFXG7doKTb"
-                target="blank"
-                >Finantial Forex Journal</a
-              >
-              <br />
-              <a
-                href="https://designer.gravit.io/?token=xN33vPcKJp0W72k0y5yGcbOVrgEfc51M"
-                target="blank"
-                >Polygon</a
-              >
-              <br /><br />
-              <p>Pixel Art</p>
-              <a
-                href="https://github.com/DanielAlbino/my_pixel_art"
-                target="_blank"
-                >My Pixel Art</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- logos -->
-    <!-- Modal -->
-    <!-- Script -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Script -->
-  </body>
+</body>
 </html>
