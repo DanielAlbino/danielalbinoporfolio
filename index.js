@@ -74,7 +74,7 @@ window.onscroll = function(e){
   project.style.opacity = setOpacity(currenScrollPos, 950, parseFloat(project.style.opacity));
   finance.style.opacity = setOpacity(currenScrollPos, 1250, parseFloat(finance.style.opacity));
   web.style.opacity = setOpacity(currenScrollPos, 1450, parseFloat(web.style.opacity));
-  gaming.style.opacity = setOpacity(currenScrollPos, 1650, parseFloat(gaming.style.opacity));
+  gaming.style.opacity = setOpacity(currenScrollPos, 1500, parseFloat(gaming.style.opacity));
 }
 
  function setOpacity(currentScrollPos, setScrollPos, opacity){
