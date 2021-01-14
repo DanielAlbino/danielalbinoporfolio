@@ -15,6 +15,9 @@ h1 {
 .bg-color-dark{
     background-color: #1a1a1aff;
 }
+.small {
+  height: 50%;
+}
 
 .background {
   background: transparent url("./assets/background.png") 50% 0;
@@ -28,6 +31,8 @@ h1 {
   font-weight: bold;
   margin-top: 0px;
 }
+
+
 
 .medium {
   color: white;
@@ -157,5 +162,9 @@ a{
     color: white;
     font-size: 72px;
     font-weight: bold;
+}
+
+#finance{
+  height: 300px;
 }
 }
