@@ -1,6 +1,8 @@
 * {
   font-family: sans-serif, serif, "Courier New", Courier, monospace;
   color: white;
+  margin: 0px;
+  padding: 0px;
 }
 .dark{
     color: black;
@@ -32,7 +34,7 @@ h1 {
   font-size: 4vh;
   font-weight: bold;
   margin: -20px;
-  width: 200px;
+  width: 100px;
 }
 
 .medium .letter {
@@ -77,6 +79,7 @@ p {
     height: 200px;
     box-shadow: #004455ff 10px 10px;
     opacity: 0;
+    margin-left: -10%;
 }
 
 .box h1{
@@ -145,6 +148,7 @@ a{
     background-color: #0088aaff;
     width: 400px;
     height: 200px;
+    margin: 0px;
     box-shadow: #004455ff 10px 10px;
     opacity: 0;
 }
