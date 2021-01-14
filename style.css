@@ -1,7 +1,6 @@
 * {
   font-family: sans-serif, serif, "Courier New", Courier, monospace;
   color: white;
-  width:100%;
 }
 .dark{
     color: black;
@@ -47,7 +46,7 @@ p {
   padding: 0px;
   margin: -10px -10px;
   margin-left: -9%;
-  
+
 }
 
 .middle {
