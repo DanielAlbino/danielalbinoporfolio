@@ -16,7 +16,7 @@ h1 {
     background-color: #1a1a1aff;
 }
 .small {
-  height: 50%;
+  height:100%;
 }
 
 .background {
@@ -64,6 +64,14 @@ p {
   text-align: right;
   margin-left: 6%;
   width: 20vh;
+}
+
+.small-image{
+  height: 13%;
+}
+
+.small-height{
+  height: 30%
 }
 
 .small-img {
@@ -166,5 +174,11 @@ a{
 
 #finance{
   height: 300px;
+}
+.small-height{
+  height: 70%
+}
+.small-image{
+  height: 50%;
 }
 }
