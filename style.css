@@ -112,6 +112,9 @@ p {
 a{
   color: white;
 }
+a:hover {
+  color: rgb(62, 121, 155);
+}
 
 .fab, .fas{
   color: white;
