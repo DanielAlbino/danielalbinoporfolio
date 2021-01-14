@@ -112,6 +112,22 @@ p {
 a{
   color: white;
 }
+
+.fab, .fas{
+  color: white;
+  margin-right:20px;
+  margin-left:20px;
+  font-size:60px;
+}
+
+
+
+hr{
+  margin: 0px;
+  border-top: 1px solid blue;
+  background-color: black;
+}
+
 /* Animations */
 @keyframes scroll {
   0% {
@@ -180,5 +196,31 @@ a{
 }
 .small-image{
   height: 50%;
+}
+hr{
+  margin: 0px;
+  border-top: 1px solid white;
+  background-color: black;
+}
+
+#contact h2{
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#contact{
+  height: 500px;
+}
+
+
+.fab, .fas{
+  color: white;
+  margin-right:50px;
+  margin-left:50px;
+  font-size:80px;
+}
+
+.fab:hover, .fas:hover{
+  color: rgb(62, 121, 155);
 }
 }
